@@ -13,7 +13,7 @@ def main():
 
     number.modify(sms_callback_url='http://example.com/sms_cb')
 
-    sms = number.sendMessage(to='+46123456789', message='Hello world')
+    sms = number.sendMessage(receiver='+46123456789', message='Hello world')
     logging.info('Sent message "%s" to "%s"' % (sms.message, sms.receiver))
 
 if __name__ == "__main__":
